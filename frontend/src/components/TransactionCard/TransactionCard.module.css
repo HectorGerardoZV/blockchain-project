@@ -64,7 +64,7 @@
 }
 
 .latestTransaction p[id="select"]:hover {
-    background: var(--color-main);
+    background: var(--color-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

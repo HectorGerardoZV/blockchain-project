@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 
 //Components
 import Separator from "../Separator/Separator"
+import { CopyToClipboard } from "react-copy-to-clipboard"
 
 //Images
 import Etheres from "../../images/ether.svg"
@@ -9,12 +10,17 @@ import Etheres from "../../images/ether.svg"
 //style
 import style from "./TransactionCard.module.css"
 const TransactionCard = ({ to, from, amount, topic, message, timestamp, latest }) => {
-
+    const handleOnClickCopyText = (e) => {
+        e.clipboardData.setDate("data", "Hello")
+    }
     return (
         <div className={latest ? style.latestTransaction : style.transactionCard}>
-            <p id={"select"} className={`address-med`}><span className={style.important}>To</span>: {to}</p>
-            <p id={"select"} className={`address-med`}><span className={style.important}>From</span>: {from}</p>
-
+            <CopyToClipboard text={from}>
+                <p id={"select"} className={`address-med`} onClick={handleOnClickCopyText} ><span className={style.important}>From</span>: {from}</p>
+            </CopyToClipboard>
+            <CopyToClipboard text={to}>
+                <p id={"select"} className={`address-med`}><span className={style.important}>To</span>: {to}</p>
+            </CopyToClipboard>
             <Separator colorLine={"two"} margin={"no"} total={"yes"} />
             <div className={style.amount__area}>
                 <p><span className={style.important}>Amount</span> : {amount} </p>
