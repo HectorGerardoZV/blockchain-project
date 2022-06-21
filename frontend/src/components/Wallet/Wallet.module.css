@@ -1,0 +1,45 @@
+.wallet {
+    background: var(--color-wallet);
+    width: 70%;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    transition: .2s ease;
+}
+.wallet:hover{
+    box-shadow: rgba(141, 154, 159, 0.35) 0px 5px 15px;
+    transform: scale(1.03);
+}
+
+.wallet__header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.wallet__header img {
+    width: 2rem;
+}
+
+.wallet__header p {
+    font-size: 1.5rem;
+}
+
+.wallet__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wallet__info_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.wallet__info_address {
+    font-size: 1rem;
+}

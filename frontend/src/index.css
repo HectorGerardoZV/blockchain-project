@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font: 'Merriweather Sans', sans-serif;
+  --color-back: #111A22;
+  --color-card: #2B4155;
+  --color-field: #4C6A85;
+  --color-text: #FFFFFF;
+  --color-letters: #DBDBDB;
+  --color-back: #111A22;
+  --color-back: #111A22;
+  --color-main: linear-gradient(90deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+  --color-wallet: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var(--color-back);
+  font-family: var(--font);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: var(--font);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+label,
+div,
+section,
+ul,
+li,
+button,span {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4,
+p,
+a,
+label {
+  font-size: 1.8rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.address-big {
+  width: 20rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.address-med {
+  width: 15rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.address-sm {
+  width: 10rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.transaction-success{
+  background-color: va(--color-main);
+}

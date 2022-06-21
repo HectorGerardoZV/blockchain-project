@@ -1,0 +1,30 @@
+.separator {
+
+    height: 1px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.separatorNoMargin {
+    height: 1px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.total {
+    width: 100%;
+}
+
+.normal {
+    width: 80%;
+}
+
+.colorOne {
+    background-color: var(--color-card);
+}
+
+.colorTwo {
+    background-color: var(--color-field);
+}

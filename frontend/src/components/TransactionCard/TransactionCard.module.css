@@ -1,0 +1,70 @@
+.transactionCard {
+    background-color: var(--color-card);
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: .2s ease;
+}
+
+.transactionCard:hover {
+    box-shadow: rgba(33, 128, 169, 0.35) 0px 5px 15px;
+    transform: scale(1.03);
+}
+
+.transactionCard p {
+    font-size: 1rem;
+    color: var(--color-letters);
+    cursor: pointer;
+}
+
+.transactionCard p[id="select"]:hover {
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.important {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.amount__area{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.amount__area img{
+    width: 1rem;
+}
+
+.latestTransaction{
+    background: var(--color-main);
+    color: var(--color-back);
+
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: .2s ease;
+}
+
+.latestTransaction:hover {
+    box-shadow: rgba(33, 128, 169, 0.35) 0px 5px 15px;
+    transform: scale(1.03);
+}
+
+.latestTransaction p {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.latestTransaction p[id="select"]:hover {
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,33 @@
+.title {
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.transactions__area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    animation: transactionsAnimation;
+    animation-duration: .5s;
+}
+
+.spinnerTransacitons__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes transactionsAnimation {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,12 @@
+.title {
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.topSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

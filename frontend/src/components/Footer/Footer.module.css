@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footer p {
+    font-size: 1.5rem;
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}

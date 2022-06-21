@@ -1,0 +1,28 @@
+.connectWallet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.connectWallet__button {
+    background: var(--color-main);
+    padding: 1.5rem 6rem;
+    border-radius: 1rem;
+    color: var(--color-back);
+    transition: .2s ease;
+    font-weight: 700;
+}
+
+.connectWallet__button:hover {
+    transform: scale(1.1);
+}
+
+.connectWallet__slogan {
+    background: var(--color-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
