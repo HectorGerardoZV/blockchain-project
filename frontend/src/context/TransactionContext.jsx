@@ -36,7 +36,7 @@ const TransactionProvider = ({ children }) => {
         setTransactionFrom({ ...transactionForm, [name]: value })
 
     }
-    
+
     const handleOnSubmitForm = async (e) => {
         e.preventDefault();
 
@@ -149,50 +149,26 @@ const TransactionProvider = ({ children }) => {
     }
 
     const openToast = (status) => {
+        const config = {
+            position: status == 2 ? "top-right" : "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            className: "transaction-success"
+        }
+
         if (status == 1) {
-            toast.success('successful transaction', {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                className: "transaction-success"
-            });
+            toast.success('successful transaction', config);
             setTransactionFrom(initialStateTransactionForm);
         } else if (status == 0) {
-            toast.error('The transaction could not be completed', {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                className: "transaction-success"
-            });
+            toast.error('The transaction could not be completed', config);
         } else if (status == 2) {
-            toast.error('All inputs are required', {
-                position: "top-right",
-                autoClose: 2500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
-        else if (status == 3) {
-            toast.error('Please install metamask', {
-                position: "top-center",
-                autoClose: 2500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.error('All inputs are required', config);
+        } else if (status == 3) {
+            toast.error('Please install metamask', config);
         }
     }
 
